@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Heading, VStack, IconButton, useColorMode } from '@chakra-ui/react'
+import { FaSun, FaMoon } from 'react-icons/fa'
+import SearchBar from './components/SearchBar';
 
 function App() {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <VStack p={4}>
+      <IconButton 
+      icon={ colorMode === 'light' ? <FaSun/> : < FaMoon />} 
+      isRound= {true} 
+      size='lg' 
+      alignSelf='flex-end' 
+      onClick={toggleColorMode} />
+      <Heading mb='8' 
+      fontWeight='extrabold' 
+      bgGradient='linear(to-r, teal.400, blue.400)'
+      bgClip='text' > 
+        Weather App 
+      </Heading>
+      <SearchBar/>
+    </VStack>
+    
   );
 }
 
