@@ -14,7 +14,7 @@ function App() {
   
   async function onSearch(newCity) {
     try {
-      await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${newCity}&units=metric&appid=${API_KEY}`)
+      await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${newCity}&units=metric&appid=${API_KEY}`)
         .then((r) => r.json())
         .then((data) => {
           const newCity = {
