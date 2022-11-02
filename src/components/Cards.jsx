@@ -24,7 +24,7 @@ export default function Cards ({ cities, onClose }) {
         ) : (
           <Flex
             wrap="wrap"
-            mt="40"
+            mt={['20', '40']}
             p="10"
             justifySelf="center"
             alignContent="center"
