@@ -68,7 +68,6 @@ function App() {
     setCities ((allCities) => allCities.filter( c => c.id !== id))
   }
 
-
   return (
     <>
       <Stack p={4} pb={2}>
