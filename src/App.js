@@ -78,7 +78,12 @@ function App() {
           alignSelf="flex-end"
           onClick={toggleColorMode}
         />
-        <Flex alignItems="center" justifyContent="flex-start" wrap="wrap">
+        <Flex
+          alignItems="center"
+          justifyContent={{ lg: "flex-start", sm: "center" }}
+          paddingInline={{ xl: "10", md: "4" }}
+          wrap="wrap"
+        >
           {" "}
           <Icon as={CiCloudSun} w={16} h={16} color="teal.400" />
           <Box>
@@ -97,12 +102,13 @@ function App() {
               bgClip="text"
             >
               <Link href="https://www.linkedin.com/in/paula-kunning" isExternal>
+                {" "}
                 Made by Paula Kunning{" "}
               </Link>{" "}
             </Text>
           </Box>
           <Spacer />
-          <Box alignSelf="center" paddingEnd="10">
+          <Box alignSelf="center" justifySelf="center" mt="10">
             <SearchBar onSearch={onSearch} />
           </Box>
         </Flex>

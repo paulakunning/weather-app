@@ -22,36 +22,36 @@ export default function SearchBar({onSearch}) {
     }
 
     return (
-        <form
+      <form
         onSubmit={(e) => {
-            handleSubmit(e);
+          handleSubmit(e);
         }}
-        >
+      >
         <Flex gap="2">
-            <InputGroup>
+          <InputGroup>
             <Input
-                maxW="lg"
-                color="teal.500"
-                focusBorderColor="teal"
-                _placeholder={{ color: "teal" }}
-                type="text"
-                placeholder="City..."
-                value={city}
-                isInvalid={handleInvalid(city)}
-                errorBorderColor="crimson"
-                onChange={(e) => handleChange(e)}
+              maxW="lg"
+              color="teal.500"
+              focusBorderColor="teal"
+              _placeholder={{ color: "teal" }}
+              type="text"
+              placeholder="City..."
+              value={city}
+              isInvalid={handleInvalid(city)}
+              errorBorderColor="crimson"
+              onChange={(e) => handleChange(e)}
             />
             <InputRightElement
-                children={
+              children={
                 handleInvalid(city) === false ? <FcOk /> : <FcHighPriority />
-                }
+              }
             />
-            </InputGroup>
-            <Button type="submit" colorScheme="teal">
+          </InputGroup>
+          <Button type="submit" colorScheme="teal">
             {" "}
             Search{" "}
-            </Button>
+          </Button>
         </Flex>
-        </form>
+      </form>
     );
 }

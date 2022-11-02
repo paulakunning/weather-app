@@ -5,7 +5,7 @@ import { FcSearch } from 'react-icons/fc'
 
 export default function Cards ({ cities, onClose }) {
     return (
-      <Center maxW="full" flexWrap="wrap" gap="4">
+      <Center maxW="full" mt='8' flexWrap="wrap" gap="4">
         {cities.length ? (
           cities.map((c) => (
             <Card
