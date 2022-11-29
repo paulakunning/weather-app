@@ -4,6 +4,8 @@ This is a Single Page Application where you can search the weather from a specif
 It was made during Soy Henry's Bootcamp while we were learning ReactJs, and we used [Open Weather API](https://openweathermap.org/api). 
 I made some changes and added styles using Chakra UI.
 
+![Hello there!](assets/WeatherApp.PNG)
+
 ## Tech Stack
 
 - HTML5

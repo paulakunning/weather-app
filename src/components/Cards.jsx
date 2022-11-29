@@ -32,7 +32,7 @@ export default function Cards ({ cities, onClose }) {
             {" "}
             <Heading color="gray.500">
               {" "}
-              <Icon as={FcSearch} /> What's the weather today in you city?{" "}
+              <Icon as={FcSearch} /> What's the weather today in your city?{" "}
             </Heading>{" "}
           </Flex>
         )}

@@ -89,7 +89,6 @@ function App() {
           <Box>
             <Heading
               size="2xl"
-              fontWeight="extrabold"
               bgGradient="linear(to-r, teal.400, blue.400)"
               bgClip="text"
             >
@@ -98,7 +97,7 @@ function App() {
             <Text
               pl={4}
               bgGradient="linear(to-r, teal.400, blue.400)"
-              fontWeight="extrabold"
+              fontWeight="bold"
               bgClip="text"
             >
               <Link href="https://www.linkedin.com/in/paula-kunning" isExternal>
