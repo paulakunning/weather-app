@@ -10,11 +10,10 @@ import 'animate.css';
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   const [ cities, setCities ] = useState([])
-  const API_KEY = '2a0f6ccc6dc7df17f067ba9c53a23a03';
   
   async function onSearch(newCity) {
     try {
-      await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${newCity}&units=metric&appid=${API_KEY}`)
+      await fetch(`/api/weather?q=${encodeURIComponent(newCity)}`)
         .then((r) => r.json())
         .then((data) => {
           const newCity = {
